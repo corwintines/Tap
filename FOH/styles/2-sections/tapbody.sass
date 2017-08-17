@@ -1,0 +1,53 @@
+.main
+  width : 100%
+  height : 90%
+
+  hr
+    margin-top : 0
+    margin-bottom : 5%
+
+  .tap
+    width : 33.3%
+    height : 95%
+    display : block
+    float : left
+
+    .taphead
+      height : 40%
+      background : url(../../images/taphead3.svg)
+      background-repeat : no-repeat
+      background-position : center
+      margin-bottom: 10%
+
+    .glass
+      height: 50%
+      .mug
+        margin: auto
+        border-style: solid
+        border-radius: 0  0 10px 10px
+        height: 90%
+        width: 150px
+        position: relative
+      .info
+        width: 100%
+        margin: auto
+        position: absolute
+        text-align: center
+        top: 50%
+        transform: translateY(-20%)
+        p
+          margin: auto
+          margin-bottom: 5px
+
+@media (max-width: 800px)
+  .main
+    width: 100%
+    .tap
+      width: 50%
+
+@media (max-width: 525px)
+  .main
+    width: 100%
+    .tap
+      width: 100%
+      margin-bottom: 5%

@@ -1,0 +1,78 @@
+.main
+  width: 100%
+  height: 90%
+  hr
+    margin-top: 0
+    margin-bottom: 5%
+  .kegbody
+    height: 95%
+
+    .keg-widget
+      height: 50%
+      width: 50%
+      float: left;
+      margin-bottom: 30px
+
+      .keg-image
+        float: left
+        width: 50%
+        height: 100%
+        background: url(../../images/keg.svg)
+        background-repeat: no-repeat
+        background-position: center
+
+      .keg-info
+        width: 50%
+        height: 100%
+        float: left
+
+        p:first-child
+          margin-top: 10%
+
+        p
+          margin-left: 10px
+          margin-bottom: 10px
+
+        button
+          width: 80%
+          display: block
+          margin: auto
+          border: none
+          background: red
+          color: white
+          height: 40px
+
+        button:hover
+          color: red
+          background: white
+
+      .hookupbutton
+        width: 100%
+        height: 100%
+        padding-top: 25%
+
+        .button_hook
+          width: 70%
+          display: block
+          margin: auto
+          border: none
+          background: green
+          color: white
+          height: 80px
+
+        .button_hook:hover
+          color: green
+          background: white
+
+@media (max-width: 600px)
+  .main
+    width: 100%
+    .kegbody
+      width: 95%;
+      .keg-widget
+        width: 100%
+        margin-top: 20px
+        margin-bottom: 20px
+        .keg-info
+          p:first-child
+            margin-top: 0

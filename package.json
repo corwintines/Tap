@@ -1,0 +1,54 @@
+{
+  "name": "tap",
+  "version": "0.0.0",
+  "description": "Flow measuring application.",
+  "engines": {
+    "node": "7.7.1",
+    "npm": "4.1.2"
+  },
+  "scripts": {
+    "start": "node BOH/flow_data_server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSSmitty/NMED4990_TAP.git"
+  },
+  "author": "Corwin Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSSmitty/NMED4990_TAP/issues"
+  },
+  "homepage": "https://github.com/CSSmitty/NMED4990_TAP#readme",
+  "devDependencies": {
+    "body-parser": "^1.17.1",
+    "browser-sync": "^2.18.8",
+    "child_process": "^1.0.2",
+    "express": "^4.14.1",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "https": "^1.0.0",
+    "johnny-five": "^0.10.6",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "browser-sync": "^2.18.8",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.1",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "https": "^1.0.0",
+    "johnny-five": "^0.10.6",
+    "jquery": "^3.2.1",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.5",
+    "nodemon": "^1.11.0"
+  }
+}
