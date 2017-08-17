@@ -8,11 +8,10 @@ var Sensor = require('./sensor_class');
 //  Database
 var mongodb = require('mongodb');
 var bodyParser = require('body-parser');
-var url = 'mongodb://CSSmitty:corwin1993@ds145389.mlab.com:45389/tap';
+var url = ''; // ADD URL TO YOUR DATABASE
 
-// Heroku Server
-//var API_ROOT = 'http://localhost:3001';
-var API_ROOT = 'https://serene-hamlet-89500.herokuapp.com';
+// Server
+var API_ROOT = ''; // ADD URL TO YOUR SERVER
 
 // Pulses
 var openSensor = 0;
