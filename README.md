@@ -69,6 +69,35 @@ and was used to create an API to access the database for the frontend, and the A
 <p><strong>Express</strong> - Express is a Node.js library that helps organize a web application to use MVC. I used
 it to control all my routes, and requests between all the components of my application. Express
 ran on the node server, and provide managment for the requests and routes send to the node
-server.</p>
+server.
 <br>
-<p><strong>
+<p><strong>jQuery</strong> - A javascript library used to create all the visual components for the project. In
+combination with AJAX, jQuery would send and receive requests to the server and then create
+components with the object data that it received.
+<br>
+<p><strong>MongoDB</strong> - This was the database used for the project. It is a non-relational database which
+means the objects are not stored in tables and dont necisarily need to be related to eachother.
+This was helpful for this kind of project when developing it because I was easily able to change
+the objects without having to change a whole database schema.
+<br>
+<p><strong>Cors</strong> - Finding this out later into the project, I needed to use this so that I could run both my
+node server, and front end on my localhost. Since the front end and server were running on
+different ports, this was used to do a cross origin reference.
+<br>
+<p><strong>Gulp</strong> - This was my task manager for the project. It was only used to manage the front end,
+since there was nothing for the backend that would have utilized gulp. How I set gulp up to work
+was to have browser-sync (everytime I made a change to something in the front end of the
+project, the browser would automatically refresh). The other main thing that gulp was used for
+was the compile my SASS into CSS. Every time I would make a change to a SASS file, gulp
+would see this change and recompile my SASS into CSS.
+<br>
+<p><strong>Johnny-Five</strong> - This library was used to create the software for the Arduino. Johnny-Five utilizes
+firmata (which comes with Arduino and is easily uploaded onto it), and allows you to make
+applications for your Arduino using javascript.
+<br>
+<p><strong>SASS</strong> - I used SASS to do the styling for this project. This was my second time using SASS on
+a project of any scale, and have found it to be a very quick way to write up my styling for the
+webpages. Gulp compiles the SASS down to CSS. Coming from languages like Python I found
+the indentation and nesting that makes SASS so readable to be a powerful tool when
+developing my pages.
+</p>
