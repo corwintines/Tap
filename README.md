@@ -49,6 +49,7 @@ where the your server is running.</p>
 <h2>Run</h2>
 <h3>Gulp File</h3>
 <p>All dependencies should be installed when running <em>npm install</em> in the route folder.
+<br>You might need to install Gulp globally on your machine. To do this, run the command <em>npm install -g gulp</em>.
 <br>The gulp file will be used to launch a local version of the client code. This gulp file 
 include live reloading of the browser using browser-sync. This function will run and refresh 
 the page every time a css, javascript, or html file has been changed.
