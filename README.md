@@ -55,3 +55,11 @@ the page every time a css, javascript, or html file has been changed.
 <br>To run the gulpfile.js navigate to the route directory which contains the gulpfile.js in the 
 terminal, and simply run the command <em>gulp</em></p>
 <h3>Node Flow Data Server</h3>
+<p>All dependencies should be installed when running <em>npm install</em> in the route folder.
+<br>The API used for this application runs with the <em>flow_data_server.js</em> file located in BOH. 
+To run this server navigate to the BOH folder, and run the command <em>node flow_data_server.js</em>.
+<h3>Node Johnny-Five Arduino</h3>
+<p>All dependencies should be installed when running <em>npm install</em> in the route folder.
+<br>The API used for this application runs with the <em>flow_sensing.js<em> file located in BOH/arduino. 
+To run this application navigate to the BOH/arduino folder, and run the command <em>node flow_sensing.js</em>.
+<h2>Stack</h2>
