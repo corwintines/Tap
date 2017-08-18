@@ -60,6 +60,15 @@ terminal, and simply run the command <em>gulp</em></p>
 To run this server navigate to the BOH folder, and run the command <em>node flow_data_server.js</em>.
 <h3>Node Johnny-Five Arduino</h3>
 <p>All dependencies should be installed when running <em>npm install</em> in the route folder.
-<br>The API used for this application runs with the <em>flow_sensing.js<em> file located in BOH/arduino. 
-To run this application navigate to the BOH/arduino folder, and run the command <em>node flow_sensing.js</em>.
+<br>The API used for this application runs with the <em>flow_sensing.js</em> file located in BOH/arduino. 
+To run this application navigate to the BOH/arduino folder, and run the command <em>node flow_sensing.js</em>.</p>
 <h2>Stack</h2>
+<p><strong>Node.js</strong> - Node.js was used as the server for this project. It accepted routes from the front end,
+and was used to create an API to access the database for the frontend, and the Arduino.
+<br>
+<p><strong>Express</strong> - Express is a Node.js library that helps organize a web application to use MVC. I used
+it to control all my routes, and requests between all the components of my application. Express
+ran on the node server, and provide managment for the requests and routes send to the node
+server.</p>
+<br>
+<p><strong>
