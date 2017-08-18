@@ -53,7 +53,7 @@ gulp.task('watch', function() {
   gulp.watch('./FOH/index.html', ['html-refresh']);
   gulp.watch('./FOH/keg.html' , ['keg-html-refresh']);
   gulp.watch('./FOH/glass.html', ['glass-html-refresh']);
-  gulp.watch('./FOH/testglass.html', ['test-glass-html-refresh'])
+  gulp.watch('./FOH/testglass.html', ['test-glass-html-refresh']);
   gulp.watch('./FOH/styles/**', ['sass']);
   gulp.watch('./FOH/scripts/**', ['buildFrontEnd-js']);
 });
