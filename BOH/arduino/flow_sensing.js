@@ -5,11 +5,6 @@ var five = require("johnny-five");
 var board = new five.Board();
 var Sensor = require('./sensor_class');
 
-//  Database
-var mongodb = require('mongodb');
-var bodyParser = require('body-parser');
-var url = ''; // ADD URL TO YOUR DATABASE
-
 // Server
 var API_ROOT = ''; // ADD URL TO YOUR SERVER
 
