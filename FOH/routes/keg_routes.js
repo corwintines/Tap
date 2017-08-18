@@ -1,5 +1,4 @@
-//var API_ROOT = 'http://localhost:3001';
-var API_ROOT = 'https://serene-hamlet-89500.herokuapp.com';
+var API_ROOT = ''; // ADD SERVER ROUTE URL HERE
 
 // ROUTES
 function getRoute(route, callback) {
@@ -51,14 +50,14 @@ function createForm(id){
   var description = '<input type="text" id="description'+split[1]+'" name="description" value="Description"><br>';
   var kegsize = '<input type="text" value="Keg Size" id="size'+split[1]+'" name="kegsize"><br>';
   var formEnd = '</form>';
-  var button = '<button type="button" id="submission_'+split[1]+'" class="button_unhook" onclick="submitForm(id)">Submit</button>'
+  var button = '<button type="button" id="submission_'+split[1]+'" class="button_unhook" onclick="submitForm(id)">Submit</button>';
   $("#"+id).remove();
   $(formStart+beer+brewery+type+alcoholPercent+description+kegsize+formEnd).appendTo("#hookup"+split[1]);
   $(button).appendTo("#hook"+split[1]);
 }
 
 function submitForm(formID) {
-  var split = formID.split('_')
+  var split = formID.split('_');
   var beer = $('#beer'+split[1]).val();
   var brewery = $('#brewery'+split[1]).val();
   var type = $('#type'+split[1]).val();
@@ -84,12 +83,12 @@ function refreshData(data) {
     var id = "<p>"+data[i]._id+"</p>";
     var beer = "<p>Beer: "+data[i].beername+"</p>";
     var brewery = "<p>Brewery: "+data[i].brewery+"</p>";
-    var kegsize = "<p>KegSize: "+String(data[i].kegsize/1000.0)+"L</p>"
+    var kegsize = "<p>KegSize: "+String(data[i].kegsize/1000.0)+"L</p>";
     var glasses = "<p>Glasses Poured: "+String(data[i].glassespoured)+"</p>";
     var poured = "<p>Amount Poured: "+String(data[i].amountpoured/1000.0)+"L</p>";
     var wasted = "<p>Amount Wasted: "+String(data[i].waste/1000.0)+"L</p>";
     var left = "<p>Amount Left: "+String(data[i].amountleft/1000.0)+"L</p>";
-    var button = '<button type="button" id="buttonunhook_'+data[i]._id+'" class="button_unhook" onclick="buttonClick(id)">Detach Keg</button>'
+    var button = '<button type="button" id="buttonunhook_'+data[i]._id+'" class="button_unhook" onclick="buttonClick(id)">Detach Keg</button>';
     $("#info"+data[i]._id).html(id+beer+brewery+kegsize+glasses+poured+wasted+left+button);
   }
 }

@@ -1,5 +1,4 @@
-//var API_ROOT = 'http://localhost:3001';
-var API_ROOT = 'https://serene-hamlet-89500.herokuapp.com';
+var API_ROOT = ''; // ADD SERVER ROUTE URL HERE
 
 var KOLSCH = '#F0D860';
 var LAGER = '#FAC937';
