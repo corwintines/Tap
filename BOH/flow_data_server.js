@@ -6,7 +6,7 @@ var app = express();
 // Database
 var mongodb = require('mongodb');
 var bodyParser = require('body-parser');
-var url = 'mongodb://CSSmitty:corwin1993@ds145389.mlab.com:45389/tap';
+var url = ''; // ADD YOUR DATABASE URL
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
